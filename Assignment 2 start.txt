@@ -4,6 +4,12 @@ from datasets import load_dataset
 dataset = load_dataset("imdb")
 
 import pandas as pd
+import numpy as np
+import nltk
+import matplotlib.pyplot as plt
+import seaborn as sns
+plt.style.use('ggplot')
+
 train_data = dataset["train"]
 test_data = dataset["test"]
 df = pd.DataFrame(train_data)
